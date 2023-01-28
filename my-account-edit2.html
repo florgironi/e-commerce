@@ -58,16 +58,25 @@
       font-weight: bold;
       margin-bottom: 4px;
     }
-    .value {
-      color: var(--very-light-pink);
-      font-size: var(--md);
-      margin: 8px 0 32px 0;
-    }
-    .secondary-button {
-      background-color: var(--white);
+    .input {
+      background-color: var(--text-input-field);
+      border: none;
       border-radius: 8px;
-      border: 1px solid var(--hospital-green);
-      color: var(--hospital-green);
+      height: 30px;
+      font-size: var(--md);
+      padding: 6px;
+      margin-bottom: 12px;
+    }
+    .input-name,
+    .input-email,
+    .input-password {
+      margin-bottom: 22px;
+    }
+    .primary-button {
+      background-color: var(--hospital-green);
+      border-radius: 8px;
+      border: none;
+      color: var(--white);
       width: 100%;
       cursor: pointer;
       font-size: var(--md);
@@ -97,16 +106,16 @@
       <form action="/" class="form">
         <div>
           <label for="name" class="label">Name</label>
-          <p class="value">Camila Yokoo</p>
+          <input type="text" id="name" placeholder="Flor" class="input input-name">
 
           <label for="email" class="label">Email</label>
-          <p class="value">camilayokoo@gmail.com</p>
+          <input type="text" id="email" placeholder="florgironi@example.com" class="input input-email">
 
           <label for="password" class="label">Password</label>
-          <p class="value">*********</p>
+          <input type="password" id="password" placeholder="*********" class="input input-password">
         </div>
 
-        <input type="submit" value="Edit" class="secondary-button login-button">
+        <input type="submit" value="Edit" class="primary-button login-button">
       </form>
     </div>
   </div>

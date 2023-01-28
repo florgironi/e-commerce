@@ -35,17 +35,17 @@
         display: flex;
         flex-direction: column;
         height: 100vh;
-        justify-content: space-around;
+        justify-content: center;
         width: 390px;
+        gap: 50px;
     }
     .total{
         background-color: var(--text-input-field);
         border-radius: 10px;
-        border: none;
         width: 100%;
         height: 70px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
     .total div{
@@ -80,23 +80,28 @@
         line-height: 24px;
         font-weight: bold;
     }
-    .total div span:nth-child(1){
-        font-size: var(--md) ;
+    .total div span:nth-child(1),.precio{
+        font-size: var(--sm) ;
         margin-bottom: 12px;
         text-align: center;
         line-height: 20px;
         font-weight: bold;
     }
+
     .subtitle{
-        color: var(--text-light-gray);
-        font-size: var(--md);
+        color: var(--very-light-pink);
+        font-size: var(--sm);
         font-weight: 400;
         margin-top: 0;
         text-align: center;
         line-height: 20px;
     }
     @media (max-width: 640px){
-        .myorder-mobile{
+        body{
+            display: block;
+            padding: 15px;
+        }
+        .myorder-desktop{
          width: 100%;   
         }
     }
@@ -110,7 +115,7 @@
                 <span > 28.01.2023 </span>
                 <span class="subtitle"> 5 articles </span>
             </div>
-            <span class="title"> $ 500,00 </span>
+            <span class="precio"> $ 500,00 </span>
         </div>
         <div class="container-card-product">
             <div div class="card-product">
@@ -118,35 +123,35 @@
                   <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
                   <span class="subtitle"> Bike </span>   
                 </div>
-                <span class="title"> $ 100,00</span>   
+                <span class="precio"> $ 100,00</span>   
             </div>
             <div div class="card-product">
                 <div>
                   <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
                   <span class="subtitle"> Bike </span>   
                 </div>
-                <span class="title"> $ 100,00</span>   
+                <span class="precio"> $ 100,00</span>   
             </div>
             <div div class="card-product">
                 <div>
                   <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
                   <span class="subtitle"> Bike </span>   
                 </div>
-                <span class="title"> $ 100,00</span>   
+                <span class="precio"> $ 100,00</span>   
             </div>
             <div div class="card-product">
                 <div>
                   <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
                   <span class="subtitle"> Bike </span>   
                 </div>
-                <span class="title"> $ 100,00</span>   
+                <span class="precio"> $ 100,00</span>   
             </div>
             <div div class="card-product">
                 <div>
                   <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
                   <span class="subtitle"> Bike </span>   
                 </div>
-                <span class="title"> $ 100,00</span>   
+                <span class="precio"> $ 100,00</span>   
             </div>
 
 
