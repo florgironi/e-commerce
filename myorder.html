@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --text-light-gray:#797979;
+        --hospital-green: #ACD9B2;
+        --sm: 16px;
+        --md: 18px;
+        --lg: 20px;
+        --font-weight-light: 400;
+        --font-weight-bold: 700;
+        --height-button: 60px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+    }
+    .myorder-mobile{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+    }
+    .img-product{
+        width: 100vw;
+        height: auto;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .description{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 20px;
+    }
+    .description p{
+        color: var(--text-light-gray);
+        font-size: var(--md);
+        font-weight: 400;
+        line-height: 23px;
+
+    }
+    .title{
+        font-size: var(--lg) ;
+        margin-bottom: 12px;
+        text-align: center;
+        line-height: 24px;
+        font-weight: bold;
+
+
+    }
+    .subtitle{
+        color: var(--text-light-gray);
+        font-size: var(--md);
+        font-weight: 400;
+        margin-top: 0;
+        margin-bottom: 32px;
+        text-align: center;
+        line-height: 20px;
+    }
+    .primary-button{
+        background-color: var(--hospital-green);
+        border-radius: 8px;
+        border: none;
+        color: var(--white);
+        width: 100%;
+        cursor: pointer;
+        font-size: var(--md);
+        font-weight: bold;
+        height: var(--height-button);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button img{
+        margin-right: 10px;
+    }
+
+</style>
+<body>
+    <div class="myorder-mobile">
+        <div class="card-product">
+            <img class="img-product" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <div class="description">
+                <span class="title"> $ 120,00</span>
+                <span class="subtitle">
+                    Retro refrigerator
+                </span>
+                <p>
+                    With its funcional and practical function, adding personality and a retro-vintage aesthetic to your kitchen or workplace
+                </p>
+            </div>
+        </div>
+            
+        <button class="primary-button"> 
+            <img src="./assets/icons/add-to-cart.png" alt="">
+            Add to cart
+        </button>
+    </div>
+    
+</body>
+</html>
