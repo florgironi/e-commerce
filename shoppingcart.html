@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --white: #FFFFFF;
+        --black: #000000;
+        --very-light-pink: #C7C7C7;
+        --text-input-field: #F7F7F7;
+        --text-light-gray:#797979;
+        --hospital-green: #ACD9B2;
+        --sm: 16px;
+        --md: 18px;
+        --lg: 20px;
+        --font-weight-light: 400;
+        --font-weight-bold: 700;
+        --height-button: 60px;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        display: grid;
+        justify-content: center;
+    }
+    .myorder-desktop{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: space-around;
+        width: 390px;
+    }
+    .total{
+        background-color: var(--text-input-field);
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .total div{
+        display: flex;
+        flex-direction: column;
+    }
+    .container-card-product{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .card-product{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .card-product div{
+        display: flex;
+        align-items: center;
+        width: 140px;
+        justify-content: space-between;
+    }
+    .card-product img{
+        width: 80px;
+        height: 80px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    
+    .title{
+        font-size: var(--lg) ;
+        line-height: 24px;
+        font-weight: bold;
+    }
+    .total div span:nth-child(1){
+        font-size: var(--md) ;
+        margin-bottom: 12px;
+        text-align: center;
+        line-height: 20px;
+        font-weight: bold;
+    }
+    .subtitle{
+        color: var(--text-light-gray);
+        font-size: var(--md);
+        font-weight: 400;
+        margin-top: 0;
+        text-align: center;
+        line-height: 20px;
+    }
+    @media (max-width: 640px){
+        .myorder-mobile{
+         width: 100%;   
+        }
+    }
+
+</style>
+<body>
+    <div class="myorder-desktop">
+        <span class="title"> My order </span> 
+        <div class="total">
+            <div>
+                <span > 28.01.2023 </span>
+                <span class="subtitle"> 5 articles </span>
+            </div>
+            <span class="title"> $ 500,00 </span>
+        </div>
+        <div class="container-card-product">
+            <div div class="card-product">
+                <div>
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                  <span class="subtitle"> Bike </span>   
+                </div>
+                <span class="title"> $ 100,00</span>   
+            </div>
+            <div div class="card-product">
+                <div>
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                  <span class="subtitle"> Bike </span>   
+                </div>
+                <span class="title"> $ 100,00</span>   
+            </div>
+            <div div class="card-product">
+                <div>
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                  <span class="subtitle"> Bike </span>   
+                </div>
+                <span class="title"> $ 100,00</span>   
+            </div>
+            <div div class="card-product">
+                <div>
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                  <span class="subtitle"> Bike </span>   
+                </div>
+                <span class="title"> $ 100,00</span>   
+            </div>
+            <div div class="card-product">
+                <div>
+                  <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+                  <span class="subtitle"> Bike </span>   
+                </div>
+                <span class="title"> $ 100,00</span>   
+            </div>
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
