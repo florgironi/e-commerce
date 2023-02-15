@@ -1,0 +1,36 @@
+@media (max-width: 640px) {
+	body {
+		display: block;
+		padding: 15px;
+	}
+	.myorder-desktop {
+		width: 95%;
+		height: auto;
+		margin-top: 3rem;
+	}
+	.desktop-menu {
+		display: none;
+	}
+
+	.menu {
+		display: block;
+	}
+
+	.navbar-left ul {
+		display: none;
+	}
+
+	.navbar-email {
+		display: none;
+	}
+    .details-products{
+        width: 100%; 
+        padding: 0;
+    }
+}
+
+@media (min-width: 641px) {
+	.mobile-menu {
+		display: none;
+	}
+}

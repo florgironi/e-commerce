@@ -4,6 +4,7 @@
     gap: 26px;
     place-content: center;
     margin-top: 3rem;
+    justify-items: center;
 }
 .product-card{
   width: 240px;

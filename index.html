@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yard Sale: Tienda Online</title>
-    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <link rel="stylesheet" type="text/css" href="./styles/styles-principal.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles-principal.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/product-details.css">
 </head>
 
 <body>
@@ -49,7 +51,7 @@
         <div class="desktop-menu inactive">
             <ul>
                 <li>
-                    <a href="/" class="title">
+                    <a href="/" >
                         My orders
                     </a>
                 </li>
@@ -100,8 +102,8 @@
                         <a href="/">My account</a>
                     </li>
                 </ul>
-            </div>
-            <ul class="footer">
+                </div>
+                <ul class="footer">
                 <li>
                     <a href="/" class="email">platzi@example.com</a>
                 </li>
@@ -112,7 +114,7 @@
         </div>
     </nav>
     <main>
-        <div class="inactive myorder-desktop">
+        <aside class="inactive myorder-desktop">
             <span class="title"> My order </span>
             <div class="total">
                 <div>
@@ -169,13 +171,34 @@
 
             </div>
 
-        </div>
+        </aside>
+        <aside class="details-products inactive">
+            <div class="card-product-close">
+                <img class="icono-close" src="./assets/icons/icon_close.png" alt="close">
+            </div>
+            <img class="img-product" src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="">
+            <div class="description">
+                <span class="title"> $ 100,00</span>
+                <span class="subtitle">
+                    Bike
+                </span>
+                <p>
+                    With its funcional and practical function, adding personality and a retro-vintage aesthetic to your kitchen or workplace
+                </p>
+            </div>
+            
+        <button class="primary-button"> 
+            <img class="icono-carrito" src="./assets/icons/add-to-cart.png" alt="">
+            Add to cart
+        </button>
+        </aside>
 
         <section class="principal">
             <div class="card-container">
-
             </div>
         </section>
+        
+
     </main>
 
     <script src="./main.js"></script>

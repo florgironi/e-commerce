@@ -99,7 +99,7 @@ for (let product of array) {
   priceProduct.innerText = "$" + product.price;
 
   const nameProduct = document.createElement("p");
-  nameProduct.innerText = "$" + product.name;
+  nameProduct.innerText = product.name;
 
   productInfoDiv.appendChild(priceProduct);
   productInfoDiv.appendChild(nameProduct);
@@ -115,7 +115,6 @@ for (let product of array) {
   productInfo.appendChild(productInfoDiv);
   productInfo.appendChild(productInfoFigure);
   cardContainer.appendChild(productCard);
-
 }
 }
 // le paso como parametro de el array que quiero recorrer 

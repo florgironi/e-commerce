@@ -29,7 +29,7 @@
         margin: 0;
         font-family: 'Quicksand', sans-serif;
     }
-    .myorder-mobile{
+    .details-products{
         display: flex;
         flex-direction: column;
         height: 100vh;
@@ -113,7 +113,7 @@
     }
 
     @media (max-width: 640px){
-        .myorder-mobile{
+        .details-products{
          width: 100%; 
          padding: 0;
         }
@@ -122,7 +122,7 @@
 
 </style>
 <body>
-    <aside class="myorder-mobile">
+    <aside class="details-products">
             <div class="card-product-close">
                 <img class="icono-close" src="./assets/icons/icon_close.png" alt="close">
             </div>
@@ -138,7 +138,7 @@
             </div>
             
         <button class="primary-button"> 
-            <img src="./assets/icons/add-to-cart.png" alt="">
+            <img class="icono-carrito" src="./assets/icons/add-to-cart.png" alt="">
             Add to cart
         </button>
     </aside>
