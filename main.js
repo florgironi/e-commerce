@@ -8,6 +8,7 @@ const carritoIcon = document.querySelector(".navbar-shopping-cart");
 const orderListDesktop = document.querySelector(".myorder-desktop");
 
 const cardContainer = document.querySelector(".card-container");
+const productDetail = document.querySelector(".details-products");
 
 menuEmail.addEventListener("click", toggleDesktopMenu);
 menuHamburguesa.addEventListener("click", toggleMobileMenu);
@@ -77,16 +78,21 @@ productList.push({
     " https://images.pexels.com/photos/13354883/pexels-photo-13354883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 ",
 });
 
+function openProductDetails(){
+  console.log('se borro la clase')
+  productDetail.classList.remove('inactive')
+}
+
 function renderProducts(array){
 // for of es "de" || y el for in es "en cada"()
 for (let product of array) {
-  console.log(product);
   const productCard = document.createElement("div");
   productCard.classList.add("product-card");
 
   const imgProduct = document.createElement("img");
   imgProduct.classList.add("imagen");
   imgProduct.setAttribute("src", product.image);
+  imgProduct.addEventListener("click", openProductDetails)
 
   productCard.appendChild(imgProduct);
 
