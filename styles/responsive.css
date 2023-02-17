@@ -4,9 +4,9 @@
 		padding: 15px;
 	}
 	.myorder-desktop {
-		width: 95%;
+		width: 100vw;
 		height: auto;
-		margin-top: 3rem;
+		margin-top: 1rem;
 	}
 	.desktop-menu {
 		display: none;

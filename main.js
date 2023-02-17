@@ -10,9 +10,13 @@ const orderListDesktop = document.querySelector(".myorder-desktop");
 const cardContainer = document.querySelector(".card-container");
 const productDetail = document.querySelector(".details-products");
 
+
+const btnCloseProductDetail = document.querySelector(".card-product-close")
+
 menuEmail.addEventListener("click", toggleDesktopMenu);
 menuHamburguesa.addEventListener("click", toggleMobileMenu);
 carritoIcon.addEventListener("click", toggleOrderList);
+btnCloseProductDetail.addEventListener("click",closeProductDetail );
 
 function toggleDesktopMenu() {
   desktopMenu.classList.toggle("inactive");
@@ -23,10 +27,9 @@ function toggleMobileMenu() {
   if (!isOrderListClose) {
     orderListDesktop.classList.add("inactive");
   }
-
+  closeProductDetail();
   mobileMenu.classList.toggle("inactive");
 }
-
 // FUNCIONALIDAD PARA MOSTRAR UN SLIDE DE LA ORDEN
 function toggleOrderList() {
   const isMobileMenuClosed = mobileMenu.classList.contains("inactive");
@@ -36,6 +39,19 @@ function toggleOrderList() {
   } else {
     orderListDesktop.classList.toggle("inactive");
   }
+  const isProductDetailClosed = productDetail.classList.contains("inactive");
+
+  if (!isProductDetailClosed) {
+    productDetail.classList.add("inactive");
+  } 
+}
+function openProductDetails(){
+  console.log('se borro la clase')
+  orderListDesktop.classList.add("inactive");
+  productDetail.classList.remove('inactive')
+}
+function closeProductDetail(){
+  productDetail.classList.add('inactive')
 }
 
 const productList = [];
@@ -78,10 +94,7 @@ productList.push({
     " https://images.pexels.com/photos/13354883/pexels-photo-13354883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2 ",
 });
 
-function openProductDetails(){
-  console.log('se borro la clase')
-  productDetail.classList.remove('inactive')
-}
+
 
 function renderProducts(array){
 // for of es "de" || y el for in es "en cada"()
